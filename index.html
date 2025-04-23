@@ -1,0 +1,96 @@
+<!-- This tells the browser that the page is written in HTML5 -->
+<!DOCTYPE html>
+
+<!-- Root element of the HTML document -->
+<!-- All content of the page (both visible and invisible) is inside the <html> element -->
+<html lang="en">
+
+<head>
+  <!-- Defines the character encoding for the document -->
+  <!-- UTF-8 supports all characters -->
+  <meta charset="UTF-8">
+
+  <!-- The title that appears in the browser tab -->
+  <title>Muraca's Bookstore</title>
+</head>
+
+<body>
+
+  <!-- HEADER SECTION -->
+  <!-- This section contains the website's title and the main navigation menu -->
+  <header>
+    <!-- Main heading of the page which is shown at the top -->
+    <h1>Muraca's Bookstore</h1>
+
+    <!-- Navigation area to help users jump to different sections of the page -->
+    <!-- Using <nav> tells browsers and screen readers that this is a navigation block -->
+    <nav>
+      <!-- An unordered list to organize the navigation links as bullet points -->
+      <ul>
+        <!-- Each list item contains a link to a section of the page -->
+        <li><a href="#action">Action</a></li>
+        <li><a href="#drama">Drama</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+
+  <!-- SECTION 1: Action Book -->
+  <!-- <section> groups together content with a related theme: here, action books -->
+  <!-- The id 'action' makes it possible to link directly to this section -->
+  <!-- The class 'book-category' is used to group similar sections for styling purposes -->
+  <section id="action" class="book-category">
+
+    <!-- Sub-heading for the section -->
+    <h2>Action Book</h2>
+
+    <!-- A paragraph giving a brief summary or description of the book -->
+    <p>A fast-paced thriller following a secret agent across Europe on a dangerous mission.</p>
+
+    <!-- Book image showing the cover -->
+    <!-- 'alt' attribute provides alternative text if the image fails to load (like in this case) -->
+    <!-- It also gives readers a description -->
+    <!-- 'class' attribute allows this image to be grouped or styled as a book cover -->
+    <img src="action-book.jpg" alt="Cover of an action book" class="book-cover">
+
+    <!-- A bulleted list made using the <ul> element (unordered list) -->
+    <!-- Each item in the list is marked with the <li> tag (list item) displaying details of the book -->
+    <ul>
+      <li>Title: Shadows Across Europe</li>
+      <li>Author: Cesare Muraca</li>
+      <li>Price: €9.99</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 2: Drama Book -->
+  <!-- Similar structure as the Action section, but for a different genre -->
+  <section id="drama" class="book-category">
+    <h2>Drama Book</h2>
+    <p>A deeply emotional story about family, memory, and the quiet struggles of everyday life.</p>
+
+    <!-- Book image with alt text and class for styling -->
+    <img src="drama-book.jpg" alt="Cover of a drama book" class="book-cover">
+
+    <!-- List of book details -->
+    <ul>
+      <li>Title: Echoes of Silence</li>
+      <li>Author: Mario Rossi</li>
+      <li>Price: €19.99</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <!-- Contains closing content such as contact info and copyright -->
+  <footer>
+    <!-- Email contact info with an anchor link that opens a new email -->
+    <!-- The id 'contact' allows the link in the nav to scroll here directly -->
+    <p id="contact">Contact us at <a href="mailto:info@muracasbookstore.com">info@muracasbookstore.com</a></p>
+
+    <!-- Copyright notice -->
+    <p>&copy; 2025 Muraca's Bookstore. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
